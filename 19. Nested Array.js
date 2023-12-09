@@ -13,4 +13,4 @@ const year = [1990,2000,2005,2010]
 // const ag3 = calcAge(calcAge(year[2]))
 
 //store in array 
-const ages = [calcAge(year[0],calcAge(year[1],calcAge(year[2]]
+const ages = [calcAge(year[0]),calcAge(year[1]),calcAge(year[2])]
