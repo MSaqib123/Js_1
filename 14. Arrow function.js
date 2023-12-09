@@ -16,3 +16,14 @@ const calcReturedYear= birthYeah => {
 }
 
 console.log("Retured Year remaing : " , calcReturedYear(1996))
+
+//__________ Multiline Parameterize Arrow Fn ___________
+
+const calcReturedYear2= (birthYeah , name) => {
+    let age = (2023 - birthYeah);
+    let retuiredYear = 40-age;
+    return `${name} returied Year = ${retuiredYear}`;
+}
+
+console.log("Retured Year remaing : " , calcReturedYear2(1996,'Saqib'))
+console.log("Retured Year remaing : " , calcReturedYear2(1999,'Ahamad'))
