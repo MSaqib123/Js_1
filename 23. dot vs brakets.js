@@ -1,4 +1,3 @@
-
 const developer = {
     firstName:'Saqib',
     lastName : 'Ali',
@@ -26,3 +25,13 @@ console.log(developer.age)
 console.log(developer['firstName'])
 console.log(developer['lastName'])
 console.log(developer['age'])
+
+
+//====_________________  ___ Banifit of  [] brakcete __________________====
+const keyName = 'Name'
+console.log(developer['first'+keyName])
+console.log(developer['last'+keyName])
+console.log(developer['age'])
+
+//-- we can not do this in  . syntax 0000000000000   ERRRRRRRRoooorR
+// console.log(developer.('first'+keyName));    ERROR
