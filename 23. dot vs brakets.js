@@ -7,17 +7,22 @@ const developer = {
     friends:['Michael','Peter','Steven']
 }
 
-//_________________ show as object __________________
+//______ show as object _____
 console.log(developer)
 
-//_________________ destructure the object __________________
+//______ destructure the object ______
 console.log(developer.firstName)
 console.log(developer.lastName)
 console.log(developer.age)
 console.log(developer.friends[0],developer.friends[1],developer.friends[2])
 
 
+//_________________  1.  get by  dot Notation . __________________
+console.log(developer.firstName)
+console.log(developer.lastName)
+console.log(developer.age)
 
-// var objFname = developer.fName;
-// var objLname = developer.lastName;
-// console.log(objFname,objLname)
+//_________________  2.  get by  bracket Notation [] __________________
+console.log(developer['firstName'])
+console.log(developer['lastName'])
+console.log(developer['age'])
