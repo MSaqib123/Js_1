@@ -3,7 +3,7 @@ const developer = {
     lastName : 'Ali',
     age : 2023 - 1996,
     jobs : 'developer',
-    friends:['Michael','Peter','Steven']
+    friends:['chota sain','talhaa','hozaifa']
 }
 //______________ bracket syntax _______________ 90 % used
 const interstedIn = prompt("whate you want to insert \n\ firstName,lastName,jobs,age,firends")
@@ -16,3 +16,9 @@ else{
 
 //______________ . syntax  (Errors) Undfied _______________
 console.log(developer.interstedIn)
+
+
+//______________ ______ chalange __________________
+console.log(`
+    ${developer.firstName} has ${developer.friends.length} and his best friend is ${developer.friends[0]}
+`)
