@@ -1,6 +1,6 @@
-let age = 18
+let age = 18;
 
 //__ Single Line Condition === ternary operator
-const snic = age>= 18 ? "NIC Required " : "NO need NIC" ;
+const snic = age >= 18 ? "NIC Required " : "NO need NIC";
 
-console.log(snic)
+console.log(snic);
