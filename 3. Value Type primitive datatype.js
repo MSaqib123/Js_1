@@ -1,3 +1,7 @@
+//========== Value ============
+//1. Primitive  (asleee)            is me  Original Datatype hoti ha
+//2. Non Primitive  (Nakeeel)       Object  Mixtures of Datatypes
+
 //------------- Data Type  Accept  Object  --------------
 //int 
 //string

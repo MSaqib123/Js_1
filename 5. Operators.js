@@ -1,3 +1,24 @@
+//------- Operand  , Operator ----------
+//   1 + 2       ,  + operator  ,   1 2  operands
+
+//1 arthmatic   +,-,*,/,% 
+    
+//1.1 concatination operator
+
+//2 assignment  = , += , -= 
+    //postfixed  , preFixed  ++ , --
+
+//3 logical operat
+    //  == , > , < , >= , <=
+
+//4 compairsion operators
+    // && , || , !
+
+
+
+    
+
+
 //___________ 1. Arthimatics ____________________
 let add = 1+1
 let sub = 5-2

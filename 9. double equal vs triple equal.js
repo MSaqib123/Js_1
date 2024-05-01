@@ -8,13 +8,10 @@ if(age == '25'){
 }
 
 
-
 //___________________ doulbe equal === ________________________
 //double equal does not check   datatype
-
 if(age === '25')
 {
-
     console.log("match")
 }
 else {

@@ -2,9 +2,6 @@
 let v1 = '25'
 console.log('v1 ' , typeof v1 , (v1 + 1))
 
-v1 = Number(v1)
-console.log('v1', typeof v1 , (v1 + 1))
-
 v2 = prompt("Enter Number")
 v2 = parseInt(v2)
 v3 = v1 + v2;
@@ -19,3 +16,8 @@ console.log("sum of v1 , v2 : " , v3)
 name = prompt("Enter Name")
 name = String(name)
 console.log("sum name : " , v3)
+
+//____________  Number ______________
+let nu = '234234'
+nu = Number(nu)
+console.log('v1', typeof nu , (nu + 1))
