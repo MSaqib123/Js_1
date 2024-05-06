@@ -12,7 +12,7 @@ console.log(friends[friends.length-1][3])
 
 
 
-//______ Array with function __________
+//______ Array with function (expresion function) __________
 const calcAge = function(birthYear){
     return 2023 - birthYear
 }
