@@ -1,3 +1,4 @@
+
 const frineds = ["chota sain",'Ákram',"huzafa","talhaa",'Saqib',"Boota"]
 console.log(frineds)
 
@@ -32,11 +33,41 @@ console.log(frineds.indexOf("sdfsdf"))
 
 //____________ 4. Splice ______________
 //to Delete or Add Element in  Spacifice  Index used Splice.
-//---- Delete ------
 
+//---- Delete ------
+//array.splice(deleteIndex , howManyElementYouWantoDelete)
+console.log(frineds)
+let indexToDelete = 2 //huzafa
+frineds.splice(indexToDelete , 1)
+console.log(frineds)
 
 
 //---- Add --------
+//array.splice(deleteIndex , 0 (weDoNotDeleteAnyThing) ,  "AddAnythng")
+let addedAtIndex = 1 //Ákram sa phlaa
+frineds.splice(addedAtIndex,0,"Rehmaan")
+console.log(frineds)
+
+
+//---- Replace --------
+//array.splice(deleteIndex , 0 (weDoNotDeleteAnyThing) ,  "AddAnythng")
+let replaceAtIndex = 1 //Rehman ko delete kr kaa  kreem
+frineds.splice(addedAtIndex,1,"Kareem")
+console.log(frineds)
+
+
+//---- Remove Center Element --------
+let CenterindexToRemove = Math.floor(frineds.length / 2);  //talha is ceneter
+alert(CenterindexToRemove)
+frineds.splice(CenterindexToRemove,1)
+console.log(frineds)
+
+//---- Add Center Element --------
+let CenterindexToAdd = Math.floor(frineds.length / 2);  //saqib is ceneter
+alert(CenterindexToAdd)
+frineds.splice(CenterindexToAdd,0,'zohab')
+console.log(frineds)
+
 
 
 //____________ ES6 +  Includes ______________
@@ -57,4 +88,3 @@ if(users.includes("Talha")) //false //true
 else{
     console.log("Invlide user")
 }
-
