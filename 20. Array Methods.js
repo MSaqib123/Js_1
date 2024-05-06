@@ -6,11 +6,12 @@ console.log(frineds)
 frineds.push("Sajid")
 var newLenght = frineds.push("Pakisnta")
 console.log(frineds)
+console.log(newLenght) //length
 
 //unShift   (add at start  & return Length of new Array) 
-frineds.unshift("jon")
-var newLenght = frineds.push("first")
+var LenghtafterUnshift = frineds.unshift("jon")
 console.log(frineds)
+console.log(LenghtafterUnshift)
 
 //____________ Remove ______________
 //pop  (oposite of Push)
@@ -36,9 +37,16 @@ console.log(frineds.includes("jon"))
 console.log(frineds.includes("saqib"))  
 console.log(frineds.includes("sdfsdf"))  
 
-
-//____________ condition ______________
-
 if(frineds.includes("talha")){
     console.log("Talhaa is my friends")
 }
+
+let users = ["Talha@gmail.com","Adan","Daniyal","Saqib"]
+if(users.includes("Talha")) //false //true
+{
+    console.log("Login Successfully")
+}
+else{
+    console.log("Invlide user")
+}
+
