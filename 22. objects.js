@@ -1,6 +1,7 @@
 //___________________ Array ______________________
 const studentArray=[
-    true,//'Saqib', //fname
+    true, //active or not
+    //'Saqib', //fname
     'Ali', //lname
     2023-1997, //age
     'teacher', //job
