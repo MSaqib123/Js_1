@@ -4,7 +4,8 @@ const friend3 = "Ali"
 
 //______________ Array 1 __________________
 //to store multiple values in  single  variable
-const friends = ["Shazad","NOman","Huzafaa"]
+const friends = ["Shazad","Noman","Huzafaa"]
+
 //print array
 console.log(friends)
 //print single Values

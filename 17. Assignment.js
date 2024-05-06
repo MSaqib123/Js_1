@@ -6,6 +6,7 @@
 //4. Convert to function bass
 //5. winner should have  2 times gretter then pionts of compatitive team
 
+
 //======================= 1. ========================
 // let dolphone = (50+ 50 + 40)
 // let clowaa = (50 + 50 + 40)

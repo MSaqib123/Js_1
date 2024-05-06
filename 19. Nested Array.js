@@ -1,6 +1,16 @@
 //_______ Nested Array _________
+
 const hobies = new Array("Getup early","Play game","JOyfull" ,"Happy")
+//let friends = ["SAQIB","Rashid","Noman","Ali" , ["Getup Early" ,'Joyfull' , 'GamePlay']]
 const friends = ["Shazad","NOman","Huzafaa" , hobies]
+
+console.log(friends[friends.length-1])
+console.log(friends[friends.length-1][0])
+console.log(friends[friends.length-1][1])
+console.log(friends[friends.length-1][2])
+console.log(friends[friends.length-1][3])
+
+
 
 //______ Array with function __________
 const calcAge = function(birthYear){
