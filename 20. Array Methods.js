@@ -1,7 +1,7 @@
-const frineds = ["chota sain","huzafa","talhaa"]
+const frineds = ["chota sain",'Ákram',"huzafa","talhaa",'Saqib',"Boota"]
 console.log(frineds)
 
-//____________ Add ______________
+//____________ 1. Add ______________
 //PUSH   (add at end  & return Length of new Array)
 frineds.push("Sajid")
 var newLenght = frineds.push("Pakisnta")
@@ -13,7 +13,7 @@ var LenghtafterUnshift = frineds.unshift("jon")
 console.log(frineds)
 console.log(LenghtafterUnshift)
 
-//____________ Remove ______________
+//____________ 2. Remove ______________
 //pop  (oposite of Push)
 frineds.pop() //remove end
 console.log(frineds)
@@ -23,12 +23,20 @@ frineds.shift() //remove start
 console.log(frineds)
 
 
-
-//____________ Index of ______________
+//____________ 3. Index of ______________
 //return index of  element   if not   then -1
 console.log(frineds.indexOf("jon"))  
 console.log(frineds.indexOf("saqib"))  
 console.log(frineds.indexOf("sdfsdf"))  
+
+
+//____________ 4. Splice ______________
+//to Delete or Add Element in  Spacifice  Index used Splice.
+//---- Delete ------
+
+
+
+//---- Add --------
 
 
 //____________ ES6 +  Includes ______________
