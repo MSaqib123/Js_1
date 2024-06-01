@@ -3,10 +3,22 @@ const saqib = {
     mass:78,
     height:1.69,
     calcBMI : function(){
-        this.bmi = this.mass /this.height ** 2;
+        this.bmi = this.mass / this.height ** 2; //**  exponent hota ha
         return this.bmi;
     }
 }
+
+const saqibBMI = saqib.calcBMI();
+console.log("Saqib's BMI:", saqibBMI);
+
+// Evaluating if Saqib's BMI falls within the healthy range
+if (saqibBMI >= 18.5 && saqibBMI <= 24.9) {
+    console.log("Saqib's BMI is within the healthy range.");
+} else {
+    console.log("Saqib's BMI is not within the healthy range.");
+}
+
+
 
 const sajid = {
     fullName:'sajid',
