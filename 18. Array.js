@@ -30,3 +30,17 @@ console.log(years[length-1])
 
 //______________ Replace Array Element  __________________
 friends[1] = "Talha"
+
+
+//______________ Nested Array Element  __________________
+var student = ["SAQIB",25,'9th','2001-2-10',["Saqjid",'Aq',["India","Pakistan"]]]
+console.log(student[0])
+console.log(student[1])
+console.log(student[2])
+console.log(student[3])
+console.log(student[4])
+console.log(student[4][0])
+console.log(student[4][1])
+console.log(student[4][2])
+console.log(student[4][2][0])
+console.log(student[4][2][1])
