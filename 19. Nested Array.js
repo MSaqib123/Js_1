@@ -24,3 +24,10 @@ const year = [1990,2000,2005,2010]
 
 //store in array 
 const ages = [calcAge(year[0]),calcAge(year[1]),calcAge(year[2])]
+
+//____  Last Element of Nested Element ____
+var student = new Array("SAQIB",25,'9th','2001-2-10',["Saqjid",'Aq',["India","Pakistan"]])
+console.log(student.length)
+console.log("Last Element : ", student[student.length-1])
+console.log("Last Element in Last : ", student[student.length-1][student[student.length-1].length-1])
+console.log("Last Element in last in last : ", student[student.length-1][student[student.length-1].length-1][student[student.length-1][student[student.length-1].length-1].length-1])
