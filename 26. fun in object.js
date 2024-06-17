@@ -32,3 +32,23 @@ const sajid = {
 saqib.calcBMI();
 sajid.calcBMI();
 console.log(saqib.bmi , sajid.bmi)
+
+
+//-------------  Get  ----------------
+//______________ Now i don't want to Acceut function ________________
+//mean wo automaticaally  dedect kr laa  
+const friends = {
+    fullName:'Saqib',
+    mass:78,
+    height:1.69,
+    // BMI:0,
+    // BMIFn : function(){
+    //     this.BMI = this.mass /this.height ** 2;
+    //     return this.BMI;
+    // }
+    get BMI(){
+        return this.mass /this.height ** 2;;
+    }
+}
+//saqib.BMIFn()
+console.log(friends.BMI)
