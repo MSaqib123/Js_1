@@ -7,7 +7,7 @@ paragraph = "I am a big fan of shid khan afridy  but i am upset he is injerd and
         because he has returied from domastic cricket as wel as"
 console.log(paragraph);
 
-//____________ 2. String Templete _____________________
+//____________ 2. Templete String (template literal) _____________________
 paragraph = `I am a big fan of shid khan afridy  but i am upset he is injerd and can not participate in  PSL
             because he has returied from domastic cricket as wel as , sahid afriday is very good cricketer 
             and all fans love to shahid khaan afridy`
