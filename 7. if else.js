@@ -1,3 +1,6 @@
+//================= Conditional statements ===========================
+
+
 let century;
 
 const birthyear = 1998
@@ -45,3 +48,9 @@ else if(day == "Saterday")
 else{
     console.log("working Day")
 }
+
+
+
+// Ternary operators 
+// Inline If condition
+

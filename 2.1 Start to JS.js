@@ -1,4 +1,3 @@
-
 //============== start to js ==================
 //====== *** Prompts *** =======
 //1. alert
@@ -45,19 +44,25 @@ console.log(name)
 //datetime
 
 
-var pasaa = 205000
-console.log(pasaa)
+//------- Initilization , Declaration --------
+// Declare        bnana
+// Initilize      value dana
 
-var project = "koi ghaas ni dall rha abhi to";
-console.log(project)
+//------- Practice ----------
 
-var isIHaveProject = false  // no false
-console.log(isIHaveProject)
+// var pasaa = 205000
+// console.log(pasaa)
 
-var emptyvalue = null;
-console.log(emptyvalue);
+// var project = "koi ghaas ni dall rha abhi to";
+// console.log(project)
 
-console.log(abc);  //undifiend
+// var isIHaveProject = false  // no false
+// console.log(isIHaveProject)
+
+// var emptyvalue = null;
+// console.log(emptyvalue);
+
+// console.log(abc);  //undifiend
 
 
 
@@ -73,5 +78,12 @@ console.log(abc);  //undifiend
 // using simple variables
 // using  prompt
 
-//2. task_2
+
+
+//2. Task_3
+// take 2 Number from user and  do this  
+    //addition , subscrition , Multiplicat9ion , division 
+
+
+//3. task_2
 // take confirm value from user and  on the base of give message to him

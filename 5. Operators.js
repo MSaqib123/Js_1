@@ -36,12 +36,12 @@ console.log(fname + " " + lName)
 let x = 10 + 5;
 x += 25; // x = x + 25
 x *= 25; // x = x * 25
-x++;  // x+1  postfixed
-x--;  // x-1  postfixed
+x++;  // x+1  postfixed   increment oper
+x--;  // x-1  postfixed   decrement
 ++x;  // 1+x  prefixed
 --x;// 1-x  prefixed
 
-//____________ 4 Compairsingo  Op __________
+//____________ 4 Comparison  Op __________
 let a = 55;
 let b = 55;
 let result = (a==b);

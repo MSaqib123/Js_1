@@ -19,3 +19,27 @@ console.log(typeof 'jons')
 
 let year;
 console.log(typeof year)
+
+
+
+//=============== Memory Parts =====================
+//1. stack
+    //=>space           low 
+    //=>permformance    heigh
+
+    // space km hona ke waja sa   stack me
+    // single size wala varible hota han
+    
+
+
+//2. heap
+    //=>space          high
+    //=>performance     low.
+
+    //space zyda hona ke wajaa saa    
+    //object  heap me store hota han
+
+
+//or ya process  JS khud handle  krtaa haaa
+
+
