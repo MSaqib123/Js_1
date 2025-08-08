@@ -2,7 +2,8 @@
 //1. Primitive  (asleee)            is me  Original Datatype hoti ha
 //2. Non Primitive  (Nakeeel)       Object  Mixtures of Datatypes  (reference -> ya hm  agaa parhan ga)
 
-//------------- Data Type  Accept  Object  --------------
+//------------- Data Type Accept Object  --------------
+// these all are  primitive datatypes
 //int 
 //string
 //bool
@@ -28,8 +29,8 @@ console.log(typeof year)
     //=>permformance    heigh
 
     // space km hona ke waja sa   stack me
-    // single size wala varible hota han
-    
+    // single size (primative Datatype) wala varible hota han
+    // or is me value directly store hoti ha
 
 
 //2. heap
@@ -37,7 +38,20 @@ console.log(typeof year)
     //=>performance     low.
 
     //space zyda hona ke wajaa saa    
-    //object  heap me store hota han
+    //object (non-primitive)  heap me store hota han
+    // or is me reference store hota ha
+
+
+    // non-primitive datatypes 
+    //object
+    //array
+    //function
+    //async function
+    //date
+    //regexp
+    //error
+    //promise
+    //generator function
 
 
 //or ya process  JS khud handle  krtaa haaa
