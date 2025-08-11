@@ -17,7 +17,9 @@
 
 //___ Heigh Level Lanaguege ___
 //js is Heigh level  interprated lanague
-//means is me  complexity ny haa  for Memeory Managmeent like  stack and heep
+    // we dont need to convert it into machine code
+    // browser do this work for us
+    //means is me  complexity ny haa  for Memeory Managmeent like  stack and heep
 
 //____ Object oriented ES6_____ 
 //js me Hm  Object base bhi  work krta han
