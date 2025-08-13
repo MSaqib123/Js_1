@@ -1,7 +1,7 @@
 //------- Operand  , Operator ----------
 //   1 + 2       ,  + operator  ,   1 2  operands
 
-//1 arthmatic   +,-,*,/,% 
+//1 arithmetic   +,-,*,/,% 
     
 //1.1 concatination operator
 
@@ -11,7 +11,7 @@
 //3 logical operat
     //  == , > , < , >= , <=
 
-//4 compairsion operators
+//4 Comparison operators
     // && , || , !
 
 
