@@ -54,3 +54,49 @@ else{
 // Ternary operators 
 // Inline If condition
 
+
+//=================== Task Caclulator =====================
+// Take input from user
+let num1 = prompt("Enter first number:");
+let operator = prompt("Enter operator (+, -, *, /):");
+let num2 = prompt("Enter second number:");
+
+// Convert to numbers after validation
+if (num1 === "" || operator === "" || num2 === "") {
+  alert("Error: All fields are required!");
+} 
+else if (isNaN(num1) || isNaN(num2)) {
+  alert("Error: Please enter valid numbers!");
+} 
+else if (parseFloat(num1) === 0 || parseFloat(num2) === 0) {
+  alert("Error: Numbers cannot be 0!");
+} 
+else {
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
+
+  let result;
+
+  if (operator === "+") {
+    result = num1 + num2;
+  } 
+  else if (operator === "-") {
+    result = num1 - num2;
+  } 
+  else if (operator === "*") {
+    result = num1 * num2;
+  } 
+  else if (operator === "/") {
+    if (num2 === 0) {
+      result = "Error: Division by zero!";
+    } else {
+      result = num1 / num2;
+    }
+  } 
+  else {
+    result = "Invalid operator!";
+  }
+
+  console.log("Result:", result);
+  alert("Result: " + result);
+}

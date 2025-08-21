@@ -1,4 +1,6 @@
 //_________ Arrow function very importent ___________
+//arrow function is short way of wriging funciton in javascripit
+
 const arrowFn = fn => console.log("Pakistan");
 arrowFn();
 

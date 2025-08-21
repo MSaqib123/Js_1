@@ -13,8 +13,6 @@ else{
     console.log("YOu should get job")
 }
 
-
-
 //______ 2. ('') _______
 // ''
 console.log(Boolean(''))
@@ -42,3 +40,30 @@ console.log(Boolean(NaN))
 
 //_________________ truthy Values ___________
 // true , value , 'string'   , {} 
+
+
+
+
+
+
+
+//===============================
+// falsy values
+
+// 0
+// ''
+// null 
+// unddfiend
+// NaN
+// false
+
+
+
+
+// truthy values
+// true 
+// "values"
+// " "
+// {}
+// []
+// object
