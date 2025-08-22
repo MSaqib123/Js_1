@@ -23,6 +23,7 @@ console.log(years[2])
 console.log(years.length)
 
 //______________ Array last element position __________________
+//poisiton hamsa hamsaa   lenght sa 1 km ho ge
 console.log(years.length-1)
 
 //______________ Array last element __________________
