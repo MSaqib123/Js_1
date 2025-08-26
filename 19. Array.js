@@ -45,3 +45,33 @@ console.log(student[4][1])
 console.log(student[4][2])
 console.log(student[4][2][0])
 console.log(student[4][2][1])
+
+
+
+var Teachers = [["SAQIB",25,'9th','2001-2-10'],["Saqjid",'Aq',["India","Pakistan"]]]
+console.log(Teachers[0])
+// console.log(Teachers[4]) after adding 1st [nested array] then it complete 0
+console.log(Teachers[1])
+
+
+
+var Animales = [
+    ["Spiral","Parots","egel","Owel","dragon","NinefoxTeal","peacock"], //0
+    ["Monky","Crokedial" , "Snack","Goets","Elephent"]  //1
+]
+
+console.log(Animales[0])
+console.log(Animales[1])
+
+//--- seprate ---
+console.log(Animales[0][0])
+console.log(Animales[0][1])
+console.log(Animales[0][2])
+console.log(Animales[0][3])
+console.log(Animales[0][4])
+
+console.log(Animales[1][0])
+console.log(Animales[1][1])
+console.log(Animales[1][2])
+console.log(Animales[1][3])
+console.log(Animales[1][4])

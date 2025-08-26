@@ -34,16 +34,24 @@ console.log(frineds.indexOf("sdfsdf"))
 //____________ 4. Splice ______________
 //to Delete or Add Element in  Spacifice  Index used Splice.
 
-//---- Delete ------
+//---- Delete_1 ------
 //array.splice(deleteIndex , howManyElementYouWantoDelete)
 console.log(frineds)
 let indexToDelete = 2 //huzafa
 frineds.splice(indexToDelete , 1)
 console.log(frineds)
 
+//---- Delete_2 ------
+// when 1 parameter is pased
+// Deletes everything from index 2 to the end.
+frineds.splice(2);
+console.log(frineds);
+
+
 
 //---- Add --------
 //array.splice(deleteIndex , 0 (weDoNotDeleteAnyThing) ,  "AddAnythng")
+// to add   set the delete lenght = 0
 let addedAtIndex = 1 //Ákram sa phlaa
 frineds.splice(addedAtIndex,0,"Rehmaan")
 console.log(frineds)
@@ -51,6 +59,7 @@ console.log(frineds)
 
 //---- Replace --------
 //array.splice(deleteIndex , 0 (weDoNotDeleteAnyThing) ,  "AddAnythng")
+// to replace   set the delete lenght = 1  
 let replaceAtIndex = 1 //Rehman ko delete kr kaa  kreem
 frineds.splice(addedAtIndex,1,"Kareem")
 console.log(frineds)
