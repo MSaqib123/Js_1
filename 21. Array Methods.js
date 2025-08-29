@@ -72,7 +72,7 @@ frineds.splice(CenterindexToRemove,1)
 console.log(frineds)
 
 //---- Add Center Element --------
-let CenterindexToAdd = Math.floor(frineds.length / 2);  //saqib is ceneter
+let CenterindexToAdd = Math.ceil(frineds.length / 2);  //saqib is ceneter
 alert(CenterindexToAdd)
 frineds.splice(CenterindexToAdd,0,'zohab')
 console.log(frineds)

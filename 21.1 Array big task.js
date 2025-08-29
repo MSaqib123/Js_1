@@ -1,12 +1,42 @@
-//1. Create User Profile: Define an object called userProfile with properties like username, age, and friendsList. Initialize the friendsList property as an empty array.
-//2. Add Friends: Write a function addFriend that takes a friend's name as a parameter and adds it to the friendsList array in the userProfile object.
-//3. Print Friends: Write a function printFriends that prints the list of friends from the friendsList array in the userProfile object.
-//4. Update Friends: update Friend
-//5. Remove Friend: Write a function removeFriend that takes a friend's name as a parameter and removes it from the friendsList array in the userProfile object.
-//6. Print Friend Count: Write a function friendCount that prints the total number of friends in the friendsList array.
-//7. Print Oldest Friend: Write a function oldestFriend that prints the oldest friend's name and their birth year from the years array.
-//8. Print Youngest Friend: Write a function youngestFriend that prints the youngest friend's name and their birth year from the years array.
-//9. Update Profile: Write a function updateProfile that allows the user to update their profile information such as username and age.
+// 1. Create User Profiles
+// Create an array called userProfiles to store multiple user profiles.
+// Each profile should be an array containing the user's username, age, and a friendsList (initialized as an empty array).
+
+// 2. Add Friend
+// Write a function addFriend that takes two parameters:
+// userIndex → the index of the user in userProfiles
+// friendName → the friend's name to add
+// Add the friend's name into the friendsList of the specified user.
+
+// 3. Print Friends
+// Write a function printFriends that takes userIndex as a parameter and prints the list of friends for that user from userProfiles.
+
+// 4. Update Friend
+// Write a function updateFriend that takes three parameters:
+// userIndex → the index of the user
+// oldName → the existing friend's name
+// newName → the updated friend's name
+// Replace the old friend's name with the new one in the user's friendsList.
+
+// 5. Remove Friend
+// Write a function removeFriend that takes two parameters:
+// userIndex → the index of the user
+// friendName → the friend's name to remove
+// Remove the friend's name from the friendsList of that user.
+
+// 6. Print Friend Count
+// Write a function friendCount that takes userIndex as a parameter and prints the total number of friends for that user.
+
+// 7. Print Oldest Friend
+// Assume you have a separate years array storing birth years of each friend for a specific user.
+// Write a function oldestFriend that takes userIndex as a parameter and prints the oldest friend's name and their birth year.
+
+// 8. Print Youngest Friend
+// Similarly, write a function youngestFriend that takes userIndex as a parameter and prints the youngest friend's name and their birth year.
+
+// 9. Update Profile
+// Write a function updateProfile that allows the user to update their own profile information such as username and age by specifying the userIndex.
+
 
 
 
@@ -15,132 +45,116 @@
 // User Profile Using Arrays Only
 // -----------------------------
 
+
+
+// 1. Create User Profiles
+// Create an array called userProfiles to store multiple user profiles.
+// Each profile should be an array containing the user's username, birthYear, and a friendsList (initialized as an empty array).
 // We'll use arrays for everything
-let userProfile = ["JohnDoe", 25, true];  // index 0 = username, index 1 = age, index 2 = isLoggedIn
+let userProfile = ["JohnDoe", 25, false];  // index 0 = username, index 1 = birthYear, index 2 = isLoggedIn
 let friendsList = [];                    // Stores arrays of friends => [id, name, birthYear]
 let nextFriendId = 1;                    // Simple ID counter for friends
 
-// Default values for profile
-const DEFAULT_USERNAME = "Guest";
-const DEFAULT_AGE = 18;
 
-// 1. Create User Profile (already created above)
-
-// 2. Add Friend (Create)
-function addFriend(name, birthYear) {
+// 2. Add Friend
+// Write a function addFriend that takes two parameters:
+// userIndex → the index of the user in userProfiles
+// friendName → the friend's name to add
+// Add the friend's name into the friendsList of the specified user.
+function addFriend(name,birthYear){
     if (!userProfile[2]) {
         console.log("⚠️ Please log in to add friends.");
         return;
     }
-    if (!name || typeof birthYear !== "number" || birthYear < 1900 || birthYear > new Date().getFullYear()) {
+    if (!name || typeof birthYear !== "number") {
         console.log("⚠️ Invalid friend data. Name must not be empty, and birth year must be valid.");
         return;
     }
-    friendsList.push([nextFriendId++, name, birthYear]); // store each friend as [id, name, birthYear]
-    console.log(`✅ ${name} added successfully with ID: ${nextFriendId - 1}!`);
+    friendsList.push([nextFriendId++,name,birthYear]);
+    console.log(`${name} added successfully with ${nextFriendId-1}`);
 }
 
-// 3. Print Friends (Read)
-function printFriends() {
+// 3. Print All Friends
+// Write a function printFriends that takes userIndex as a parameter and prints the list of friends for that user from userProfiles.
+let printAllFriends = () => {
     if (!userProfile[2]) {
-        console.log("⚠️ Please log in to view friends.");
+        console.log("⚠️ Please log in to add friends.");
         return;
     }
-    if (friendsList.length === 0) {
-        console.log("⚠️ No friends added yet.");
-        return;
-    }
-
-    console.log("👥 Friends List:");
-    friendsList.forEach((friend) => {
-        console.log(`ID: ${friend[0]}. ${friend[1]} (Born: ${friend[2]})`);
-    });
+    console.log(friendsList)
 }
 
-// 4. Remove Friend (Delete)
-function removeFriend(id) {
+// 4. Update Friend
+// Write a function updateFriend that takes three parameters:
+// userIndex → the index of the user
+// oldName → the existing friend's name
+// newName → the updated friend's name
+// Replace the old friend's name with the new one in the user's friendsList.
+function updateFriend(indexofArray,name,birthYear){
     if (!userProfile[2]) {
-        console.log("⚠️ Please log in to remove friends.");
+        console.log("⚠️ Please log in to add friends.");
         return;
     }
-    let index = friendsList.findIndex(friend => friend[0] === id);
-
-    if (index !== -1) {
-        let removed = friendsList.splice(index, 1);
-        console.log(`🗑️ Friend ${removed[0][1]} (ID: ${removed[0][0]}) removed successfully.`);
-    } else {
-        console.log(`⚠️ Friend with ID "${id}" not found!`);
+    if (!name || typeof birthYear !== "number" ) {
+        console.log("⚠️ Invalid friend data. Name must not be empty, and birth year must be valid.");
+        return;
     }
+
+    friendsList[indexofArray];
+    friendsList[indexofArray][1] = name;
+    friendsList[indexofArray][2] = birthYear;
+    console.log(`Updated Successfully ${friendsList[indexofArray]}`)
 }
 
-// 5. Update Friend (Update)
-function updateFriend(id, newName, newBirthYear) {
+// 5. Remove Friend
+// Write a function removeFriend that takes two parameters:
+// userIndex → the index of the user
+// friendName → the friend's name to remove
+// Remove the friend's name from the friendsList of that user.
+function removeFriend(indexofArray){
     if (!userProfile[2]) {
-        console.log("⚠️ Please log in to update friends.");
+        console.log("⚠️ Please log in to add friends.");
         return;
     }
-    if (!newName || typeof newBirthYear !== "number" || newBirthYear < 1900 || newBirthYear > new Date().getFullYear()) {
-        console.log("⚠️ Invalid update data. Name must not be empty, and birth year must be valid.");
-        return;
-    }
-    let friend = friendsList.find(friend => friend[0] === id);
-
-    if (friend) {
-        friend[1] = newName;
-        friend[2] = newBirthYear;
-        console.log(`📝 Friend with ID ${id} updated: ${newName} (Born: ${newBirthYear})`);
-    } else {
-        console.log(`⚠️ Friend with ID "${id}" not found!`);
-    }
+    friendsList.splice(indexofArray,1);
+    console.log(`Removed Successfully ${friendsList[indexofArray]}`)
 }
 
 // 6. Print Friend Count
-function friendCount() {
+// Write a function friendCount that takes userIndex as a parameter and prints the total number of friends for that user.
+function totalFriends(){
     if (!userProfile[2]) {
-        console.log("⚠️ Please log in to view friend count.");
+        console.log("⚠️ Please log in to add friends.");
         return;
     }
-    console.log(`👥 Total Friends: ${friendsList.length}`);
+    console.log("Your Total Friends : ", friendsList.length);
 }
 
 // 7. Print Oldest Friend
-function oldestFriend() {
+// Assume you have a separate years array storing birth years of each friend for a specific user.
+// Write a function oldestFriend that takes userIndex as a parameter and prints the oldest friend's name and their birth year.
+
+function printOldestFriends(){
     if (!userProfile[2]) {
-        console.log("⚠️ Please log in to view friends.");
+        console.log("⚠️ Please log in to add friends.");
         return;
     }
-    if (friendsList.length === 0) {
-        console.log("⚠️ No friends available.");
-        return;
-    }
-
-    let oldest = friendsList.reduce((prev, curr) =>
-        prev[2] < curr[2] ? prev : curr
-    );
-
-    console.log(`👴 Oldest Friend: ${oldest[1]} (ID: ${oldest[0]}, Born: ${oldest[2]})`);
+    console.log("After Loop learning");
 }
 
 // 8. Print Youngest Friend
-function youngestFriend() {
+// Similarly, write a function youngestFriend that takes userIndex as a parameter and prints the youngest friend's name and their birth year.
+function printYoungestFriends(){
     if (!userProfile[2]) {
-        console.log("⚠️ Please log in to view friends.");
+        console.log("⚠️ Please log in to add friends.");
         return;
     }
-    if (friendsList.length === 0) {
-        console.log("⚠️ No friends available.");
-        return;
-    }
-
-    let youngest = friendsList.reduce((prev, curr) =>
-        prev[2] > curr[2] ? prev : curr
-    );
-
-    console.log(`👶 Youngest Friend: ${youngest[1]} (ID: ${youngest[0]}, Born: ${youngest[2]})`);
+    console.log("After Loop learning");
 }
 
-// 9. Update Profile (Improved Update)
-function updateProfile(newUsername, newAge) {
+// 9. Update Profile
+// Write a function updateProfile that allows the user to update their own profile information such as username and birthYear by specifying the userIndex.
+function updateProfile(newUsername, newbirthYear) {
     if (!userProfile[2]) {
         console.log("⚠️ Please log in to update profile.");
         return;
@@ -148,12 +162,13 @@ function updateProfile(newUsername, newAge) {
 
     // Validate and set defaults
     const username = newUsername && typeof newUsername === "string" && newUsername.trim() ? newUsername.trim() : DEFAULT_USERNAME;
-    const age = typeof newAge === "number" && newAge >= 0 && newAge <= 120 ? newAge : DEFAULT_AGE;
+    const birthYear = typeof newbirthYear === "number" && newbirthYear >= 0 && newbirthYear <= 120 ? newbirthYear : DEFAULT_birthYear;
 
     userProfile[0] = username;
-    userProfile[1] = age;
-    console.log(`📝 Profile Updated: Username: ${userProfile[0]}, Age: ${userProfile[1]}`);
+    userProfile[1] = birthYear;
+    console.log(`📝 Profile Updated: Username: ${userProfile[0]}, birthYear: ${userProfile[1]}`);
 }
+
 
 // 10. Login Simulation (for testing purposes)
 function login() {
@@ -161,55 +176,32 @@ function login() {
     console.log(`🔐 Logged in as ${userProfile[0]}`);
 }
 
+
 // 11. Logout Simulation
 function logout() {
     userProfile[2] = false;
     console.log("🔓 Logged out");
 }
 
-// ---------------------------
-// Example Usage
-// ---------------------------
 
-// Simulate login
+// ---------------------------
+// Example UsbirthYear
+// ---------------------------
 login();
+addFriend("SAQIB",25);
 
-// Add some friends
-addFriend("Ali", 1998);
-addFriend("Sara", 2002);
-addFriend("Hassan", 1995);
-addFriend("Zara", 2005);
+printAllFriends();
 
-// Print friends
-printFriends();
+updateFriend(0,"Billal",27);
+printAllFriends();
 
-// Show total friends
-friendCount();
+removeFriend(0);
+printAllFriends();
 
-// Update a friend
-updateFriend(2, "SaraUpdated", 2003);
 
-// Remove a friend
-removeFriend(1);
+totalFriends();
+addFriend("SAQIB",25);
+addFriend("Nomi",25);
+addFriend("Akram",25);
 
-// Print again
-printFriends();
-
-// Show oldest and youngest friend
-oldestFriend();
-youngestFriend();
-
-// Update profile with valid data
-updateProfile("JohnUpdated", 30);
-
-// Update profile with invalid data (should use defaults)
-updateProfile("", -5);
-
-// Test without login
-logout();
-updateProfile("TestUser", 25); // Should fail
-addFriend("TestFriend", 2000); // Should fail
-
-// Final user profile and friends
-console.log("📌 Final Profile:", userProfile);
-console.log("📌 Final Friends List:", friendsList);
+totalFriends();
