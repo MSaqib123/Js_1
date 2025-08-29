@@ -34,7 +34,11 @@ sajid.calcBMI();
 console.log(saqib.bmi , sajid.bmi)
 
 
-//-------------  Get  ----------------
+//===============================================
+//================ ES6 Feature ==================
+//===============================================
+//-------------  Get property ----------------
+
 //______________ Now i don't want to Acceut function ________________
 //mean wo automaticaally  dedect kr laa  
 const friends = {

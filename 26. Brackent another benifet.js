@@ -6,7 +6,7 @@ const developer = {
     friends:['chota sain','talhaa','hozaifa']
 }
 //______________ bracket syntax _______________ 90 % used
-const interstedIn = prompt("whate you want to insert \n\ firstName,lastName,jobs,age,firends")
+const interstedIn = prompt("what you want to insert \n\ firstName,lastName,jobs,age,firends")
 if(developer[interstedIn]){
     console.log(developer[interstedIn])
 }
@@ -20,5 +20,7 @@ console.log(developer.interstedIn)
 
 //______________ ______ chalange __________________
 console.log(`
-    ${developer.firstName} has ${developer.friends.length} and his best friend is ${developer.friends[0]}
+    ${developer.firstName} 
+    has ${developer.friends.length} and 
+    his best friend is ${developer.friends[0]}
 `)
