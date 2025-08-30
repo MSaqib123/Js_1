@@ -5,6 +5,7 @@ const developer = {
     jobs : 'developer',
     friends:['chota sain','talhaa','hozaifa']
 }
+
 //______________ bracket syntax _______________ 90 % used
 const interstedIn = prompt("what you want to insert \n\ firstName,lastName,jobs,age,firends")
 if(developer[interstedIn]){
@@ -14,13 +15,16 @@ else{
     console.log("Wront entry")
 }
 
-//______________ . syntax  (Errors) Undfied _______________
+//______________ syntax (Errors) Undfied _______________
 console.log(developer.interstedIn)
 
 
-//______________ ______ chalange __________________
+//____________________ chalange __________________
 console.log(`
     ${developer.firstName} 
     has ${developer.friends.length} and 
     his best friend is ${developer.friends[0]}
 `)
+
+
+

@@ -3,6 +3,11 @@ const saqib = {
     mass:78,
     height:1.69,
     calcBMI : function(){
+        //------ 1st way -----
+        // return (this.mass/this.height)**2;
+        
+        //------ 2nd way -----
+        //Store bmi to object  this.bmi properity
         this.bmi = this.mass / this.height ** 2; //**  exponent hota ha
         return this.bmi;
     }

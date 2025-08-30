@@ -6,7 +6,19 @@ const st = [
     ["Talhaa bhi","Chota sain","Huzaifa"],
     true
 ]
+//=======================================================================
+//================= Printing Complete Array by Loop =====================
+// or to display the ARray value using LOOP
+//=======================================================================
+for(let i = 0; i<st.length; i++){
+    //======= Display ======
+    console.log("St Array Values : " , st[i]);
+    console.log("Type of Array value : ",typeof st[i]);    
+}
 
+//=======================================================================
+//================= Create New Array by looping st array ================
+//=======================================================================
 //initialize empty array
 const types = [];
 

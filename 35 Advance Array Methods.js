@@ -1,13 +1,37 @@
 const friends = ["chota sain",'Ákram',"huzafa","talhaa",'Saqib',"Boota"]
 
+//==============================================================
+//================= Advance Array methods ======================
+// what they do.  ==> the same work we can do by using for loop
+// but  ES6 advance method  will the same workin 1 to 2 line
+// and For loop is very loong and lengthy process to work 
+// means ya hamaraa  zydaa lines of code ka work km line me kr dataa han
+//==============================================================
+
+//====== Old js  ES5 ========
+// for loop 
+// while loop 
+// do while loop
+
+
+//======= ES6 mehtods ==========
+
 //____________ 1. forEach ______________
 //for loop ke tarha   forEach  array ka lya hota ha speccial for array
-friends.forEach(function(item,index){
-    console.log(item,index)
-})
+
+//== 1. 1st way which is most used ==
+// friends.forEach(item=>{
+//     console.log(item);
+// })
 friends.forEach((item,index)=>{
-    console.log(item,index)
+    console.log(`${item} is at ${index}`);
 })
+
+//== 2. 2nd way not used now ==
+friends.forEach(function(item,index){
+    console.log(`${item} is at ${index}`);
+})
+
 
 //____________ 2. map ______________
 //map will generate new Array after  doing some changing in  old array
@@ -20,6 +44,13 @@ console.log(lowerCaseFriends)
 //filter will  get all  Element 
 const friendsWithT = friends.filter(friend => friend.includes('t'));
 console.log(friendsWithT);
+
+//we can not do the same thing with  map
+// because map give return all the value  in the form of  any action 
+// do not give filter value 
+const friendwithInclude = friends.map(i=>i.includes('i'))
+console.log(friendwithI)
+
 
 //____________ 4. find ______________
 //find will  find 1st element   and return  single Result value
