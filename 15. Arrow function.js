@@ -13,12 +13,17 @@ console.log(calcAge(1998))
 
 
 //__________ Multiline Arrow Fn ___________
-const calcReturedYear= birthYeah => {
-    let age = (2023 - birthYeah);
-    let retuiredYear = 40-age;
-    return retuiredYear;
+let calcReturedYear = birthYear => {
+    let age = (2025-birthYear);
+    let retuirementPerioud = 40;
+    let retuiredYear = retuirementPerioud-age;
+    if(retuiredYear > 0 ){
+        return `${retuiredYear} are remaning from retirement`
+    }
+    else{
+        return `${retuiredYear} you are alredy expired 😂`
+    }
 }
-
 console.log("Retured Year remaing : " , calcReturedYear(1996))
 
 
@@ -28,10 +33,8 @@ const calcReturedYear2= (birthYeah , name) => {
     let retuiredYear = 40-age;
     return `${name} returied Year = ${retuiredYear}`;
 }
-
 console.log("Retured Year remaing : " , calcReturedYear2(1996,'Saqib'))
 console.log("Retured Year remaing : " , calcReturedYear2(1999,'Ahamad'))
-
 
 //--------------------------- Multiple parameters arrow function ----------------------------------
 const calculator = (v1,v2,operator)=>{
