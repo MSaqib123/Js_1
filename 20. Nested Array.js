@@ -19,7 +19,6 @@ const calcAge = function(birthYear){
     return 2023 - birthYear
 }
 const year = [1990,2000,2005,2010]
-
 // const ag1 = calcAge(calcAge(year[0]))
 // const ag2 = calcAge(calcAge(year[1]))
 // const ag3 = calcAge(calcAge(year[2]))

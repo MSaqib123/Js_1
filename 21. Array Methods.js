@@ -3,23 +3,23 @@ const frineds = ["chota sain",'Ákram',"huzafa","talhaa",'Saqib',"Boota"]
 console.log(frineds)
 
 //____________ 1. Add ______________
-//PUSH   (add at end  & return Length of new Array)
+//PUSH          (add at end  & return Length of new Array)
 frineds.push("Sajid")
 var newLenght = frineds.push("Pakisnta")
 console.log(frineds)
 console.log(newLenght) //length
 
-//unShift   (add at start  & return Length of new Array) 
+//UNSHIFT       (add at start  & return Length of new Array) 
 var LenghtafterUnshift = frineds.unshift("jon")
 console.log(frineds)
 console.log(LenghtafterUnshift)
 
 //____________ 2. Remove ______________
-//pop  (oposite of Push)
+//POP           (oposite of Push)
 frineds.pop() //remove end
 console.log(frineds)
 
-//shift  (oposite of unshift)
+//SHIFT         (oposite of unshift)
 frineds.shift() //remove start
 console.log(frineds)
 

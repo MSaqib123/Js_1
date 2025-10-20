@@ -32,3 +32,15 @@ function fruiteProccess(apple,orange){
 
 let juiceAfterMilkSheek = fruiteProccess(2,5)
 console.log(juiceAfterMilkSheek)
+
+
+
+// Arrow with Complete Arrow Function
+let fruiteCut = (fruite)=> fruite * 4;
+let fruiteCutP = (apple,orange)=>{
+    const applePices = fruiteCut(apple);
+    const orangePices = fruiteCut(orange);
+    const juice = `juices of Orange and apple with ${applePices} apple and ${orangePices} orange sliceing`;
+    return juice;
+}
+console.log(fruiteCutP(10,5));
