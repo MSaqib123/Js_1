@@ -21,3 +21,23 @@ console.log("sum name : " , v3)
 let nu = '234234'
 nu = Number(nu)
 console.log('v1', typeof nu , (nu + 1))
+
+
+
+// 1. implicit    means convert automatically
+    
+    let s = '5';
+    let n = 6;
+    let result = s + n;
+    console.log(result); // "56"  string
+    console.log(typeof result); // string
+    let result2 = s * n;
+    console.log(result2); // 30  number
+    console.log(typeof result2); // number
+
+
+// 2. explicit   means convert manually or forcefully
+        let s1 = '5';
+        let n1 = 6;
+        let result1 = Number(s1) + n1;
+        console.log(result1);
