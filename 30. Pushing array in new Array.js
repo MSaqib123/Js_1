@@ -43,3 +43,31 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages)
 
 
+
+
+
+
+//extracting Studennts freinds in seprate error
+    
+    let friends = []
+    console.log(friends,"friends Array");
+
+    for (let index = 0; index < st.length; index++) {
+        const element = st[index];
+        if(index < 4){
+            console.log(element)
+        }
+        else{
+            console.log(element)
+            for (let index = 0; index < element.length; index++) {
+                const el = element[index];
+                console.log("-----> " , el)
+                friends.push(el);
+            }
+        }
+    }
+
+    for (let index = 0; index < friends.length; index++) {
+        const element = friends[index];
+    }
+    console.log(friends,"friends Array");
