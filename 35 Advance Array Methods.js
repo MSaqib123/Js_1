@@ -345,4 +345,28 @@ console.log(allNames);
     //17 flatMap
 
 
+    //forEach
+    //map
+    //filter
+    //find
+    //findIndex
+
+    //reduce
+    //some
+    //every
+
+    //concate
+    //slice
+    //join 
+
+    //replace
+    //replaceAll
+
+    //reverse
+    //sort
+
+    //flat
+    //flatMap
+    
+    
     
