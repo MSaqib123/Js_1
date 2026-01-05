@@ -54,3 +54,43 @@ const calculator = (v1,v2,operator)=>{
     }
 }
 console.log(calculator(12,2,"*"));
+
+
+
+
+
+//====== we can pass list of name directly =======
+const myNamesList = (firstName, lastName)=> `My Name is ${firstName} ${lastName}`;
+myNamesList("SAQIB", "KHAN");
+
+
+
+
+//====== with single parameter we can also add multiple parameters using list paramter
+const myListNames = (...names)=> `My Names are ${names.join(", ")}`;
+myListNames("SAQIB", "KHAN", "ALI", "AHMED");
+
+
+
+//====== ... is know as rest parameter  used to pass multiple parameters as an array
+// we can also use default parameter
+const myDefaultName = (name = "Guest")=> `My Name is ${name}`;
+myDefaultName();
+
+
+
+//====== ... is also know as spread operator used to spread array elements as individual elements
+const arr = ["SAQIB", "KHAN", "ALI", "AHMED"];
+const mySpreadNames = (...names)=> `My Names are ${names.join(", ")}`;
+mySpreadNames(...arr); // spreading array elements as individual elements
+
+
+
+
+
+//====== my practice ======
+const practiceArrayName = (name1,name2='á',name3="b")=> `My names are ${name1}`
+practiceArrayName("saqib");
+
+const practiceArrayNames = (...names)=> `My names are ${names}`
+console.log(practiceArrayNames("saqib","khan","ali"));
