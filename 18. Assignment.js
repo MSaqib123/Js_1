@@ -83,6 +83,7 @@
 //         console.log("no one wines" , dollphinScore, clowaaScore   )
 //     }
 // }
+//checkWinner(dollphinScore,clowaaScore);
 
 
 //======================= 5. =========================
