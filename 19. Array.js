@@ -13,11 +13,22 @@ console.log(friends[0])
 console.log(friends[1])
 console.log(friends[2])
 
+//EmptyList
+let emptyFriendsList = []
+emptyFriendsList[0] = "SAQIB"
+emptyFriendsList[1] = "Sajid";
+emptyFriendsList[2] = "Akram";
+emptyFriendsList[3] = "Noman";
+emptyFriendsList[4] = "Ahamd";
+console.log(emptyFriendsList,"emptyList")
+
 //______________ Array 2 __________________
 const years = new Array(1991,1984,2008,2020);
 console.log(years[0])
 console.log(years[1])
 console.log(years[2])
+
+
 
 //______________ Array length __________________
 console.log(years.length)
