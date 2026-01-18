@@ -22,6 +22,10 @@ emptyFriendsList[3] = "Noman";
 emptyFriendsList[4] = "Ahamd";
 console.log(emptyFriendsList,"emptyList")
 
+// IMPORTANT override the Index value  
+emptyList[0] = "DDDDDDDDD"
+console.log(emptyFriendsList,"eeeee")
+
 //______________ Array 2 __________________
 const years = new Array(1991,1984,2008,2020);
 console.log(years[0])
