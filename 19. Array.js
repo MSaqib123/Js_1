@@ -32,6 +32,22 @@ console.log(years[0])
 console.log(years[1])
 console.log(years[2])
 
+//empty list
+let emptyCountries = new Array();
+emptyCountries[0] = "Pakistan"
+emptyCountries[1] = "INdia"
+emptyCountries[2] = "Srilanka"
+emptyCountries[3] = "Turqee"
+emptyCountries[4] = "bg"
+console.log(emptyCountries);
+
+// IMPORTANT override the Index value  
+emptyCountries[0] = "PKR"
+emptyCountries[1] = "PKR"
+emptyCountries[2] = "PKR"
+emptyCountries[3] = "PKR"
+emptyCountries[4] = "PKR"
+console.log(emptyCountries,"eeeee")
 
 
 //______________ Array length __________________
